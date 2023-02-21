@@ -2,6 +2,11 @@ name: Post welcome comment
 on:
   pull_request:
     types: [opened]
+  workflow_dispatch:
+    inputs:
+      tags:
+        description: "this is from workflow dispatch" 
+      
 jobs:
   build:
     name: Post welcome comment
